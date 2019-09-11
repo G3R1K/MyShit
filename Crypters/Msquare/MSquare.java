@@ -109,6 +109,12 @@ public class MSquare {
         boolean action_crypt = true;
         boolean customArray = false;
 
+        if(args.length == 0) // if you run a program without arguments
+        {
+            System.out.println("[!]Something went wrong! Use help(-h) for more info");
+            System.exit(11);
+        }
+
         switch (args[0]) //Check out the flag
         {
             case "-cI":
