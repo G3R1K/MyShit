@@ -115,7 +115,7 @@ public class Main {
         return findWord(firstLetter,null);
     }
 
-    public static void requestАnalyzer(String request) throws IOException {
+    public static void requestAnalyzer(String request) throws IOException {
         switch (request.substring(0,1)){
             case "!":
                 if(request.length() == 4){
@@ -144,10 +144,10 @@ public class Main {
     }
 
     public static void request() throws IOException {
-        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in,"cp1251");
         String request = in.next();
         System.out.println(request);
-        requestАnalyzer(request);
+        requestAnalyzer(request);
     }
 
     public static void main(String[] args) throws IOException {
